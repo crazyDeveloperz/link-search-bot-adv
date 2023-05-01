@@ -52,7 +52,7 @@ async def misc(bot, update):
     elif data=="help":
        await update.message.edit(text=script.HELP, 
                                  disable_web_page_preview=True,
-                                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⬅️ Back", callback_data="misc_home")]])) 
+                                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="misc_home")],[InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='http://t.me/crazysupportz'),InlineKeyboardButton('ᴏᴡɴᴇʀ', url='http://t.me/heartlesssn')]])) 
 
     elif data=="about":
         await update.message.edit(text=script.ABOUT.format((await bot.get_me()).mention), 
