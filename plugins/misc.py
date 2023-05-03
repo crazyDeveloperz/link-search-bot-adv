@@ -8,8 +8,8 @@ async def start(bot, message):
     await message.reply(text=script.START.format(message.from_user.mention),
                         disable_web_page_preview=True,
                         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇆', url=f'http://t.me/Snunfilterbot?startgroup=true')
-            ],[InlineKeyboardButton("⚡️ ʜᴇʟᴘ", callback_data="misc_help"),
-                                                            InlineKeyboardButton("😜 ᴀʙᴏᴜᴛ", callback_data="misc_about")]]))  
+            ],[InlineKeyboardButton("ʜᴇʟᴘ", callback_data="misc_help"),
+                                                            InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="misc_about")]]))  
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
     await message.reply(text=script.HELP, 
@@ -48,14 +48,14 @@ async def misc(bot, update):
                                  disable_web_page_preview=True,
                                  reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇆', url=f'http://t.me/Snunfilterbot?startgroup=true')
             ],[InlineKeyboardButton("⚡️ ʜᴇʟᴘ", callback_data="misc_help"),
-                                                            InlineKeyboardButton("😜 ᴀʙᴏᴜᴛ", callback_data="misc_about")]])) 
+                                                            InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="misc_about")]])) 
     elif data=="help":
        await update.message.edit(text=script.HELP, 
                                  disable_web_page_preview=True,
-                                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 ʙᴀᴄᴋ", callback_data="misc_home")],[InlineKeyboardButton('💌 ᴏᴡɴᴇʀ', url='http://t.me/heartlesssn')]])) 
+                                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⇍  ʙᴀᴄᴋ", callback_data="misc_home")],[InlineKeyboardButton('💌 ᴏᴡɴᴇʀ', url='http://t.me/heartlesssn')]])) 
 
     elif data=="about":
         await update.message.edit(text=script.ABOUT.format((await bot.get_me()).mention), 
                                   disable_web_page_preview=True,
-                                  reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("✨ ʙᴀᴄᴋ", callback_data="misc_home")]]))
+                                  reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⇍  ʙᴀᴄᴋ", callback_data="misc_home"),InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ ⇴', url='http://t.me/heartlesssn')]]))
          
