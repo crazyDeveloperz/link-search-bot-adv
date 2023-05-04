@@ -110,9 +110,9 @@ async def force_sub(bot, message):
                                       user_id=message.from_user.id,
                                       permissions=ChatPermissions(can_send_messages=False)
                                       )
-       await message.reply(f"⚠ Dear User {message.from_user.mention}!\n\nto send message in the group,You have to join in our channel to message here", 
-                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Join Channel", url=f_link)],
-                                                          [InlineKeyboardButton("Try Again", callback_data=f"checksub_{message.from_user.id}")]]))
+       await message.reply(f"⚠ ᴅᴇᴀʀ ᴜsᴇʀ {message.from_user.mention}!\n\nᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ,ʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ɪᴏɪɴ ɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ", 
+                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=f_link)],
+                                                          [InlineKeyboardButton("ᴛʀʏ ᴀɢᴀɪɴ ↺", callback_data=f"checksub_{message.from_user.id}")]]))
        await message.delete()
        return False
     except Exception as e:
