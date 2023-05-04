@@ -15,15 +15,15 @@ async def _verify(bot, message):
     try:       
        user = await bot.get_users(user_id)
     except:
-       return await message.reply(f"❌ {user_name} Need to start me in PM!")
+       return await message.reply(f"❌ {user_name} ɴᴇᴇᴅ ᴛᴏ sᴛᴀʀᴛ ᴍᴇ ɪɴ ᴘᴍ ↬")
     if message.from_user.id != user_id:
-       return await message.reply(f"Only {user.mention} can use this command 😁")
+       return await message.reply(f"ᴏɴʟʏ {user.mention} ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ☄")
     if verified==True:
-       return await message.reply("This Group is already verified!")
+       return await message.reply("ᴛʜɪs ɢʀᴏᴜᴘ ɪs ᴀʟʀᴇᴀᴅʏ ᴠᴇʀɪғɪᴇᴅ ♙")
     try:
        link = (await bot.get_chat(message.chat.id)).invite_link     
     except:
-       return message.reply("❌ Make me admin here with all permissions!")    
+       return message.reply("❌ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ʜᴇʀᴇ ᴡɪᴛʜ ᴀʟʟ ᴘᴇʀᴍɪssɪᴏɴs!")    
            
     text  = f"#NewRequest\n\n"
     text += f"User: {message.from_user.mention}\n"
@@ -35,9 +35,9 @@ async def _verify(bot, message):
                            text=text,
                            disable_web_page_preview=True,
                            reply_markup=InlineKeyboardMarkup(
-                                                 [[InlineKeyboardButton("✅ Approve", callback_data=f"verify_approve_{message.chat.id}"),
-                                                   InlineKeyboardButton("❌ Decline", callback_data=f"verify_decline_{message.chat.id}")]]))
-    await message.reply("Verification Request sent ✅\nWe will notify You Personally when it is approved")
+                                                 [[InlineKeyboardButton("⋞ ᴀᴘᴘʀᴏᴠᴇ ⋟", callback_data=f"verify_approve_{message.chat.id}"),
+                                                   InlineKeyboardButton("ℵ ᴅᴇᴄʟɪɴᴇ ℵ", callback_data=f"verify_decline_{message.chat.id}")]]))
+    await message.reply("ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ʀᴇǫᴜᴇsᴛ sᴇɴᴛ ✅\nᴡᴇ ᴡɪʟʟ ɴᴏᴛɪғʏ ʏᴏᴜ ᴘᴇʀsᴏɴᴀʟʟʏ ᴡʜᴇɴ ɪᴛ ɪs ᴀᴘᴘʀᴏᴠᴇᴅ")
 
 
 @Client.on_callback_query(filters.regex(r"^verify"))
@@ -48,9 +48,9 @@ async def verify_(bot, update):
     user  = group["user_id"]
     if update.data.split("_")[1]=="approve":
        await update_group(id, {"verified":True})
-       await bot.send_message(chat_id=user, text=f"Your verification request for {name} has been approved ✅")
+       await bot.send_message(chat_id=user, text=f"ʏᴏᴜʀ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ʀᴇǫᴜᴇsᴛ ғᴏʀ {name} ʜᴀs ʙᴇᴇɴ ᴀᴘᴘʀᴏᴠᴇᴅ ✅")
        await update.message.edit(update.message.text.html.replace("#NewRequest", "#Approved"))
     else:
        await delete_group(id)
-       await bot.send_message(chat_id=user, text=f"Your verification request for {name} has been declined 😐 Please Contact Admin")
+       await bot.send_message(chat_id=user, text=f"ʏᴏᴜʀ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ʀᴇǫᴜᴇsᴛ ғᴏʀ {name} ʜᴀs ʙᴇᴇɴ ᴅᴇᴄʟɪɴᴇᴅ 😐 ᴘʟᴇᴀsᴇ ᴄᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ")
        await update.message.edit(update.message.text.html.replace("#NewRequest", "#Declined"))
