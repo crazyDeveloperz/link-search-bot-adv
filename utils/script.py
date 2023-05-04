@@ -28,6 +28,12 @@ class script(object):
 
 /fub -100xxxxxxxxxx
 
+❂ ꜰᴏʀ ʀᴇᴍᴏᴠɪɴɢ ꜰᴏʀᴄᴇ ꜱᴜʙ ɪɴ ɢʀᴏᴜᴘ ᴛʏᴘᴇ /nofsub ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪᴅ
+
+⤨ ᴇxᴀᴍᴘʟᴇ -
+
+/nofsub -100xxxxxxxxxx
+
 ⤨ ʀᴇᴍᴏᴠᴇ ᴀ ᴄʜᴀɴɴᴇʟ ᴡɪᴛʜ
 
 /disconnect -100xxxxxxxxxxx
