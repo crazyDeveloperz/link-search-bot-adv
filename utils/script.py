@@ -26,7 +26,7 @@ class script(object):
 
 ⤨ ᴇxᴀᴍᴘʟᴇ -
 
-/fub -100xxxxxxxxxx
+/fsub -100xxxxxxxxxx
 
 ❂ ꜰᴏʀ ʀᴇᴍᴏᴠɪɴɢ ꜰᴏʀᴄᴇ ꜱᴜʙ ɪɴ ɢʀᴏᴜᴘ ᴛʏᴘᴇ /nofsub ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪᴅ
 
