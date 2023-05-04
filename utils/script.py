@@ -38,18 +38,16 @@ I Will filter your channel posts automatically and send it in your group chat wh
 
 
 
-    ABOUT = """Developed By @crazybotz
-
-✯ Mʏ Nᴀᴍᴇ:  {}
-✯ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/heartlesssn'>𝗖𝗿𝗮𝘇𝘆 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿</a>
-✯ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org'>Pʏᴛʜᴏɴ 3</a>
-✯ DᴀᴛᴀBᴀsᴇ: <a href='https://cloud.mongodb.com/'>MᴏɴɢᴏDB</a>
-✯ Bᴏᴛ Sᴇʀᴠᴇʀ: : <a href='https://heroku.com'>Heroku</a>"""
+    ABOUT = """✯ ᴍʏ ɴᴀᴍᴇ :  {}
+✯ ᴄʀᴇᴀᴛᴏʀ: <a href='https://t.me/heartlesssn'>ᴄʀᴀᴢʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ</a>
+✯ ʟᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org'>ᴘʏᴛʜᴏɴ 3</a>
+✯ ᴅᴀᴛᴀʙᴀsᴇ: <a href='https://cloud.mongodb.com/'>ᴍᴏɴɢᴏᴅʙ</a>
+✯ ʙᴏᴛ sᴇʀᴠᴇʀ: : <a href='https://heroku.com'>Heroku</a>"""
 
     STATS = """My Status 💫
 
-👥 Users: {}
-🧿 Groups: {}"""
+👥 ᴜsᴇʀs: {}
+👻 ɢᴏᴜᴘs: {}"""
 
     BROADCAST = """<u>{}</u>
 
