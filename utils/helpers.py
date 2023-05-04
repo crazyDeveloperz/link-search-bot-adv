@@ -101,7 +101,7 @@ async def force_sub(bot, message):
        f_link = (await bot.get_chat(f_sub)).invite_link
        member = await bot.get_chat_member(f_sub, message.from_user.id)
        if member.status==enums.ChatMemberStatus.BANNED:
-          await message.reply(f"Sorry {message.from_user.mention}!\n You are banned in our channel, you will be banned from here within 10 seconds")
+          await message.reply(f"sᴏʀʀʏ {message.from_user.mention}!\n ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ, ʏᴏᴜ ᴡɪʟʟ ʙᴇ ʙᴀɴɴᴇᴅ ғʀᴏᴍ ʜᴇʀᴇ ᴡɪᴛʜɪɴ 𝟷𝟶 sᴇᴄᴏɴᴅs")
           await asyncio.sleep(10)
           await bot.ban_chat_member(message.chat.id, message.from_user.id)
           return False       
