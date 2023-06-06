@@ -1,7 +1,7 @@
 API_ID       = 25069425
 API_HASH     = "41034e257e6449615faea5f18bbe1dd7"
 BOT_TOKEN    = "6159314541:AAFWdl3qSyNUjpwKPvpjG39PxXRpEOmL7t8"
-SESSION      = "I0Bmxxjn/L4FfWKldmTyoZQYZQEuTykucvlVPj889XaH1tAF/2Wsv+CqvW6WOgH2qGynqprj+zz7JeN1ecHmbhAp8EGyrhYPEN+1XHkmOzQz+M5+qXt60iz+QNmjJKDKl1JvceNnDW1Bt5gvbhAXpVshb7lTeLbZnnzeYucSmXxuvmbFw0e3ambPlU7upUcBHv+dInJBgvcKqOU4TeLFy7QgdQrX36p1R3d7AQFU7gug=="
+SESSION      = "BQGjmq4AAukWa06yr-GmXo4MBYFo9rXEkbBpq0MqASzQAIICvOCRd_b114IBlyvJG5UontoiXTG6wu8zt6-3K7x73mvoYIE3pEjEKW2veVEHOrd6uUc88HkgmdkCcCj1_QGcV0mzuKSTfzzVD5Yh9w3F5mKPstO0yK_p-Ojsfc_PPosSBu2h-Cy_lyfsqytbILTWgZNvz6662BXgIQ34j5tyOQ8XAqDzQkIv8Ro8LVp8Bom8KckmGBy6teaKkFvv07Hj_7vxTTxo9EMGDlz0wz7Y1wzjEisjYxNhKi1upcwtoddaaLC7GtAKzXFn_5Q4an0awrbSi2gXO7I3zvfLoRpDzVEpigAAAAFlbcqHAA"
 DATABASE_URI = "mongodb+srv://Shivam31:Shivam31@cluster0.yrc8krw.mongodb.net/?retryWrites=true&w=majority"
 LOG_CHANNEL  = -1001876507111
 ADMIN        = 6249148586
