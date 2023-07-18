@@ -17,7 +17,7 @@ async def search(bot, message):
     if message.text.startswith("/"):
        return    
     query   = message.text 
-    head    = "<u>ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʀᴇsᴜʟᴛ 👇\n\nsᴜᴘᴘᴏʀᴛ </u> <b><I>@crazybotz</I></b>\n\n"
+    head    = "<b>ℵ ʜᴇʀᴇ ɪꜱ ʏᴏᴜʀ ʀᴇꜱᴜʟᴛ ℵ</b>\n\n"
     results = ""
     try:
        for channel in channels:
@@ -57,7 +57,7 @@ async def recheck(bot, update):
     id      = update.data.split("_")[-1]
     query   = await search_imdb(id)
     channels = (await get_group(update.message.chat.id))["channels"]
-    head    = "<u>I Have Searched Movie With Wrong Spelling But Take care next time 👇\n\nPromoted By </u> <b><I>@crazybotz</I></b>\n\n"
+    head    = "<b>ㆅ ɪ ʜᴀᴠᴇ ꜱᴇᴀʀᴄʜᴇᴅ ᴍᴏᴠɪᴇ ᴡɪᴛʜ ᴡʀᴏɴɢ ꜱᴘᴇʟʟɪɴɢ ʙᴜᴛ ᴛᴀᴋᴇ ᴄᴀʀᴇ ɴᴇxᴛ ᴛɪᴍᴇ 👇</b>\n\n"
     results = ""
     try:
        for channel in channels:
